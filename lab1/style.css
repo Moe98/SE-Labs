@@ -1,0 +1,202 @@
+/* Applies to everything */
+/* *{
+    margin:0;
+    padding:0;
+} */
+
+body{
+    background-color: rgb(241, 209, 166); /* Color of the background */
+    color: rgb(236, 164, 9); /* Color of text */
+
+    font-family: Arial, Helvetica, sans-serif; /* Font and they are web safe fonts */
+    font-size: 15px;
+    font-weight: normal; /* bold, normal, etc. */
+    font: normal 16px Arial, Helvetica, sans-serif; /* this can substitute the 3 lines above */
+
+    line-height: 1.5em; /* Spacing between lines */
+    margin:0;
+}
+
+a{
+    test-decoration: none; /* doesn't underline the links */
+    color:black;
+}
+
+a:hover{
+    color:red; /* color when you hover on a link */
+}
+
+a:active{
+    color:green; /* color when pressed */
+}
+
+/* a:visited{
+    color:rgb(30, 159, 199); color of previously clicked links */
+/*}*/
+
+.container{
+    width:80%; /* when dealing with containers we want to set it with % so that it adapts */
+    margin:auto;
+}
+
+.button{
+    background-color:black;
+    color:white;
+    padding: 10px 15px;
+    border:none;
+}
+
+.button:hover{ /* attribute hover inside class button */
+    background:red;
+    color:white;
+}
+
+.clr{
+    clear:both;
+}
+
+.box-1{
+    background-color: darkslateblue;
+    border-right:5px red solid;
+    border-top:5px red solid;
+    border-left:5px red solid;
+    border-bottom:5px red solid;
+    border:5px red solid; /* Does the same as the above 4 lines */
+    border-bottom-width: 10px;
+    border-style: dotted;
+    padding:20px;
+    margin-top: 20px; 
+    margin:20px 0; /* 20 applies for top/bottom 0 right/left */
+}
+
+/* h1 inside class box-1 */
+.box-1 h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2{
+    border:3px dotted burlywood;
+    padding:20px;
+    margin: 20px 0; /* Refer to previous margin for explanation of what the 20 and 0 are */
+}
+
+.categories{
+    border:1px burlywood solid;
+    padding:10px;
+    border-radius:15px; /* Adds rounded corners, curved edges. */
+
+}
+
+.categories h2{
+    text-align:center;
+}
+
+.categories ul{
+    padding:0px;
+    list-style:square; /* instead of bullet points, for no bullet points etc type none instead. */
+}
+
+.categories li{
+    padding-bottom:8px;
+    border-bottom:dotted 1px rgba(37, 106, 197, 0.555);
+    list-style-image: url('images/check.jpg'); /* ../images/ if same folder etc. */
+
+}
+
+.my-form{
+    padding: 20px;
+
+}
+
+.form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display:block; /* looks more professional and puts each label on a line of its own*/
+}
+
+.my-form input[type="text"], .my-form textarea{ /* [type="text"] this is applied to things of type text only */
+    padding:8px;
+    width:100%; /* takes 100% of the size */
+}
+
+.block{
+    float:left;
+    width:33.3%; /* since there are 3 blocks */
+    border: 1px solid rgba(80, 45, 136, 0.253);
+    padding:10px;
+    box-sizing: border-box; /*fixes the % that's lost due to border and padding */
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background: #333;
+    color:#fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 30px; 
+    position: relative;
+    background-image:url('images/bgimage.jfif');
+    background-position: 100px 200px;
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+}
+/* set to relative before setting to absolute*/
+
+.p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{ /* first child */
+    background: red;
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: grey;
+}
+
+.my-list li:nth-child(odd){
+    background: rgb(68, 61, 61);
+}
